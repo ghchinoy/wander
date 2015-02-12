@@ -1,7 +1,7 @@
 {
-  "name": "Wander - Enjoy new locations",
+  "name": "Wander - enjoy new locations",
   "description": "Enjoy a new location every time Google Maps is opened.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "manifest_version": 2,
   "author": "G. Hussain Chinoy",
   "short_name": "Wander",

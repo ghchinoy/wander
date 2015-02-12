@@ -1,7 +1,6 @@
 //var host = "https://maps.google.com";
 var host = "https://www.google.com/maps/";
 
-
 function generateRandomPoint(center, radius) {
   var x0 = center.lng;
   var y0 = center.lat;
@@ -22,7 +21,6 @@ function generateRandomPoint(center, radius) {
   return {'lat': y+y0, 'lng': xp+x0};
 }
 
-
 var returnRandomLocation = function(details) {
 
   var geo = generateRandomPoint({lng:0,lat:0}, 2*6378100);
@@ -33,9 +31,7 @@ var returnRandomLocation = function(details) {
          };
 };
 
-
-
-chrome.webRequest.onBeforeRequest.addListener(
+Request.onBeforeRequest.addListener(
 
   returnRandomLocation,
     {
