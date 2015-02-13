@@ -5,7 +5,7 @@ function generateRandomPoint(center, radius) {
   var x0 = center.lng;
   var y0 = center.lat;
   // Convert Radius from meters to degrees.
-  var rd = radius/111300;
+  var rd = radius / 111300;
 
   var u = Math.random();
   var v = Math.random();
@@ -15,7 +15,7 @@ function generateRandomPoint(center, radius) {
   var x = w * Math.cos(t);
   var y = w * Math.sin(t);
 
-  var xp = x/Math.cos(y0);
+  var xp = x / Math.cos(y0);
 
   // Resulting point.
   return {'lat': y+y0, 'lng': xp+x0};
@@ -32,7 +32,6 @@ var returnRandomLocation = function(details) {
 };
 
 Request.onBeforeRequest.addListener(
-
   returnRandomLocation,
     {
         urls: [
